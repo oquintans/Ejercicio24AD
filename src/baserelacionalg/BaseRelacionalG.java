@@ -56,7 +56,8 @@ public class BaseRelacionalG {
             cS.setString(2, a);
             cS.registerOutParameter(1, Types.INTEGER);
             cS.execute();
-            System.out.println(cS.getInt(1));
+            System.out.println("Cod: " + a);
+            System.out.println("Prezo: " + cS.getInt(1));
             cS.close();
 
         } catch (SQLException ex) {
